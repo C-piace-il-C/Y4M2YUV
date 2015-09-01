@@ -9,7 +9,7 @@
 #include <assert.h>
 #include <string.h>
 
-int convertY4m(const char * inputFilename, const char * outputFilename);
+int convertY4M(const char * inputFilename, const char * outputFilename);
 void doHelp();
 
 #endif /* Y4M2YUV_H_ */
