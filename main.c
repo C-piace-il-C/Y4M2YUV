@@ -16,7 +16,7 @@ main(int argc, char ** argv)
     return 1;
   }
 
-  convertY4M(argv[1], argv[1]);
+  convertY4M(argv[1], argv[2]);
 
   return 0;
 }
