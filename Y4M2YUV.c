@@ -25,7 +25,6 @@ convertY4M(const char* inputFilename, const char* outputFilename)
   char buffer [BUFFER_SIZE];
   char chunk  [BUFFER_SIZE];
 
-
   size_t bytesRead;
   int firstBlock = 1;
   int bufferNumber = 0;
