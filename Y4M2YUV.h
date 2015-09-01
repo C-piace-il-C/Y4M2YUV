@@ -8,13 +8,14 @@
 #define PROGRAM_NAME        "y4m2yuv"
 #define BUFFER_SIZE         1000
 
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <string.h>
 
-int convertY4M(const char * inputFilename, const char * outputFilename);
-int convertY4MO(const char* inputFilename, const char* outputFilename); // Optimized
+uint_fast8_t convertY4M(const char * inputFilename, const char * outputFilename);
+uint_fast8_t convertY4MO(const char * inputFilename, const char * outputFilename); // Optimized
 void doHelp();
 
 #endif /* Y4M2YUV_H_ */
