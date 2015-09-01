@@ -161,8 +161,9 @@ convertY4MO(const char* inputFilename, const char* outputFilename)
       fseek(input, 6, SEEK_CUR);
    }while(bytesRead == frameSize);
 
-   fclose(input);
    fclose(output);
+   fclose(input);
+   free(buffer);
 
    return(1);
 }
