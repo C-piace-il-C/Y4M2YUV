@@ -122,16 +122,17 @@ convertY4MO(const char* inputFilename, const char* outputFilename)
 
    if((char * buffer = (char *)malloc(BUFFER_SIZE)) == NULL)
    {
-     fclose(input);
-     fclose(output);
-     return 0; 
+      fclose(input);
+      fclose(output);
+      return 0; 
    }
 
    if((char * chunk  = (char *)malloc(BUFFER_SIZE)) == NULL)
    {
-     fclose(input);
-     fclose(output);
-     return 0;
+      free(buffer);
+      fclose(input);
+      fclose(output);
+      return 0;
    }
 
    uint_fast8_t  blockNumber  = 0;
