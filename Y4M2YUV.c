@@ -87,7 +87,7 @@ doHelp()
   printf(
       "%s help\n"
       "The correct command takes two arguments, the input and output filename.\n"
-      "Example: ./%s sequence.y4m convertedSeq.yuv",
+      "Example: %s input.y4m output.yuv\n",
       PROGRAM_NAME,
       PROGRAM_NAME
   );
