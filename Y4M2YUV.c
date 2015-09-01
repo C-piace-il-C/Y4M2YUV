@@ -120,16 +120,14 @@ convertY4MO(const char* inputFilename, const char* outputFilename)
       return 0;
    }
 
-   char * buffer = (char *)malloc(BUFFER_SIZE);
-   if (!buffer) 
+   if((char * buffer = (char *)malloc(BUFFER_SIZE)) == NULL)
    {
      fclose(input);
      fclose(output);
      return 0; 
    }
 
-   char * chunk  = (char *)malloc(BUFFER_SIZE);
-   if (!chunk)
+   if((char * chunk  = (char *)malloc(BUFFER_SIZE)) == NULL)
    {
      fclose(input);
      fclose(output);
