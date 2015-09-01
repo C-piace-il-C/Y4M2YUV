@@ -34,10 +34,10 @@ convertY4M(const char* inputFilename, const char* outputFilename)
     bufferNumber++;
     bytesRead = fread(buffer, 1, BUFFER_SIZE, input);
 
-    int _ii = 0, _if = bytesRead - 1;
+    size_t _ii = 0, _if = bytesRead - 1;
 
-    int bytesCopied = 0;
-    int bytesToCopy = 0;
+    size_t bytesCopied = 0;
+    size_t bytesToCopy = 0;
 
     int C;
     if(bytesRead > 6)
