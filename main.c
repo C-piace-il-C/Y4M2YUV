@@ -13,10 +13,10 @@ main(int argc, char ** argv)
   if(argc != 3)
   {
     doHelp();
-    return 1;
+    return(1);
   }
 
-  convertY4M(argv[1], argv[2]);
+  int res = convertY4MO(argv[1], argv[2]);
 
-  return 0;
+  return(res);
 }

@@ -14,6 +14,7 @@
 #include <string.h>
 
 int convertY4M(const char * inputFilename, const char * outputFilename);
+int convertY4MO(const char* inputFilename, const char* outputFilename); // Optimized
 void doHelp();
 
 #endif /* Y4M2YUV_H_ */
